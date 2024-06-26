@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="solar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="screen"></div>
+        <div class="buttons">
+        <button type="button" class="clear" value="ClearAll" onclick = "updateScreen('AC')">AC</button>
+        <button type="button" class="cross" value="backSpace" onclick = "updateScreen('CE')">CE</button>
+        <button type="button" class="per" value="%" onclick = "updateScreen('%')">%</button>
+        <button type="button" class="div" value="/" onclick = "updateScreen('/')">/</button>
+        <button type="button" class="num7" value="7" onclick = "updateScreen('7')">7</button>
+        <button type="button" class="num8" value="8" onclick = "updateScreen('8')">8</button>
+        <button type="button" class="num9" value="9" onclick = "updateScreen('9')">9</button>
+        <button type="button" class="mul" value="X" onclick = "updateScreen('x')">x</button>
+        <button type="button" class="num4" value="4" onclick = "updateScreen('4')">4</button>
+        <button type="button" class="num5" value="5" onclick = "updateScreen('5')">5</button>
+        <button type="button" class="num6" value="6" onclick = "updateScreen('6')">6</button>
+        <button type="button" class="sub" value="-" onclick = "updateScreen('-')">-</button>
+        <button type="button" class="num1" value="1" onclick = "updateScreen('1')">1</button>
+        <button type="button" class="num2" value="2" onclick = "updateScreen('2')">2</button>
+        <button type="button" class="num3" value="3" onclick = "updateScreen('3')">3</button>
+        <button type="button" class="plus" value="+" onclick = "updateScreen('+')">+</button>
+        <button type="button" class="num0" value="0" onclick = "updateScreen('0')">0</button>
+        <button type="button" class="dot" value="." onclick = "updateScreen('.')">.</button>
+        <button type="button" class="equal" value="=" onclick = "updateScreen('=')">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
